@@ -4,9 +4,10 @@ import random
 import time
 import requests
 from io import BytesIO
+import os
 
-# ВСТАВЬТЕ СЮДА ВАШ ТОКЕН ОТ @BotFather
-BOT_TOKEN = "8509737337:AAEfy3Y3U4zdEJn9B67T_Ij7IkNZXoZ-NRs"
+# Получаем токен из переменной окружения
+BOT_TOKEN = os.getenv('BOT_TOKEN', '8509737337:AAEfy3Y3U4zdEJn9B67T_Ij7IkNZXoZ-NRs')
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
